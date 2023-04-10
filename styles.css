@@ -9,9 +9,13 @@ html, body {
 }
 
 body {
-  font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
   background: #aeb6bf;
+  transition: background .7s;
+}
+
+body, button, textarea, input {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
 }
 
 button {
@@ -28,11 +32,12 @@ div#root {
 }
 
 div#content {
-  width: 300px;
-  height: 300px;
-  padding: 15px;
-  border-radius: 25px;
+  width: 18.75rem;
+  height: 18.75rem;
+  padding: 0.9375rem;
+  border-radius: 1.5625rem;
   background: #d0d3d4;
+  box-shadow: 10px 10px #212f3c;
 
   display: flex;
   flex-direction: column;
@@ -41,51 +46,60 @@ div#content {
 }
 
 div#content h1 {
-  font-size: 25px;
+  font-size: 1.5625rem;
+  color: #212f3c;
 }
 
 div#content section.data {
-  padding: 15px;
+  padding: 1.5625rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 0.75rem;
 }
 
 div#content section.data label {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 div#content section.data input {
   border: 0;
-  padding: 5px;
-  border-radius: 20px;
+  padding: 0.3125rem;
+  border-radius: 1.25rem;
   outline: none;
+  box-shadow: 3px 3px #212f3c;
 }
 
 div#content section.data div {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 0.3125rem;
 }
 
-div#content section.data button {
+button {
   width: 100%;
-  padding: 10px;
-  border-radius: 20px;
+  padding: 0.625rem;
+  border-radius: 1.25rem;
+  background: #212f3c;
+  color: #fff;
+  transition: all .7s;
+}
+
+button:hover {
+  filter: opacity(0.9);
 }
 
 div#content section.password {
-  padding: 15px;
+  padding: 0.9375rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 0.75rem;
 }
 
 .hidden {
@@ -94,15 +108,19 @@ div#content section.password {
 
 div#content section.password button {
   width: 100%;
-  padding: 10px;
-  border-radius: 20px;
+  padding: 0.625rem;
+  border-radius: 1.25rem;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 0.3125rem;
+
+  background: #212f3c;
+  color: #fff;
 }
 
 div#content section.password button img {
-  width: 16px;
+  width: 1rem;
+  fill: #fff;
 }
